@@ -24,6 +24,8 @@ public class Word {
 	
 	@Column(name="post_occurances")
 	private long postOccurances;
+	
+	public Word() {}
 
 	public Word(String name, long thumbsUp, long thumbsDown, long postOccurances) {
 		super();

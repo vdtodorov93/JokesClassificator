@@ -16,7 +16,7 @@ import veb.jokes.crawler.db.WordRepository;
 @SpringBootApplication
 public class Application {
 	@Autowired
-	private Crawler c;
+	private Crawler crawler;
 	
 	@Resource
     private Environment env;
@@ -30,12 +30,7 @@ public class Application {
 	@Bean
 	public CommandLineRunner demo(WordRepository repository) {
 		return (args) -> {
-			c.asd();
-			//System.out.println("ASD");
-			//String asd = env.getRequiredProperty("asd");
-//			Word a = new Word(asd, 5, 2, 1);
-//			System.out.println(asd);
-//			repository.save(a);
+			crawler.crawlersGonnaCrawl();
 		};
 	}
 
