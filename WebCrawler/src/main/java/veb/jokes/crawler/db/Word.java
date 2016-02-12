@@ -70,7 +70,10 @@ public class Word {
 	public long getId() {
 		return id;
 	}
-	
-	
 
+	@Override
+	public String toString() {
+		return "Word [id=" + id + ", name=" + name + ", thumbsUp=" + thumbsUp + ", thumbsDown=" + thumbsDown
+				+ ", postOccurances=" + postOccurances + "]";
+	}
 }

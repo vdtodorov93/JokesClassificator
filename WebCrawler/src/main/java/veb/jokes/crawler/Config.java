@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan("veb.jokes.crawler.db")
+@ComponentScan("veb.jokes")
 @PropertySource("classpath:application.properties")
 @EnableJpaRepositories("veb.jokes.crawler.db")
 public class Config {
